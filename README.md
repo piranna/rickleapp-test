@@ -33,3 +33,5 @@ To achieve this, you get:
 - Separate main views into different React Components.
 
 - The more it matches the design, the better, but feel free to take artistic licenses (and provide reason for then if possible).
+
+- No need of making it responsive.
