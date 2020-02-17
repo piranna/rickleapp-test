@@ -7,8 +7,10 @@ The goal is to create a Rick & Morty characters index in a React website.
 To achieve this, you get:
 
 - Design of the web and style/measurements details:
+![design](https://github.com/axlalvaro/rickleapp-test/blob/master/rickleapp.png)
+![measurements](https://github.com/axlalvaro/rickleapp-test/blob/master/rickleapp_measurements.png)
 
-- A free API ([rickandmortyapi.com](https://rickandmortyapi.com) ) from where to get the characters.
+- A free API ([rickandmortyapi.com](https://rickandmortyapi.com)) from where to get the characters.
   - https://rickandmortyapi.com/api/character/
 
 - A base React project with some utils:
