@@ -26,7 +26,7 @@ To achieve this, you get:
   2. Create a new branch with your name to work on.
   3. Use `npm start` and go to http://localhost:8000.
 
-- **When finished**: push your branch to the GitHub repo.
+- **When finished**: send a .zip of your project (without the node_modules folder) to us.
 
 ## Tips
 
