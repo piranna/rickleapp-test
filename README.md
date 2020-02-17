@@ -10,6 +10,9 @@ To achieve this, you get:
 ![design](https://github.com/axlalvaro/rickleapp-test/blob/master/rickleapp.png)
 ![measurements](https://github.com/axlalvaro/rickleapp-test/blob/master/rickleapp_measurements.png)
 
+- My coded approach to the test:
+![coded](https://github.com/axlalvaro/rickleapp-test/blob/master/rickleapp.gif)
+
 - A free API ([rickandmortyapi.com](https://rickandmortyapi.com)) from where to get the characters.
   - https://rickandmortyapi.com/api/character/
 
