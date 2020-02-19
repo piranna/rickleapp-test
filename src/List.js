@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import Details from './Details'
-
 import './css/list.scss'
 
 
@@ -13,27 +11,23 @@ export default class List extends Component
 
     const {characters} = props
 
-    this.state = {active: characters[0].id, characters}
-
-    this.findActiveCharacter = (function(character)
-    {
-      return character.id === this.state.active
-    }).bind(this)
+    this.state = {characters}
   }
 
-  _renderCharacter({gender, id: active, image, name, origin, species, status})
+  _renderCharacter({gender, id, image, name, origin, species, status})
   {
+    const {setActive} = this.props
+
     return (
-      <div key={name} onClick={()=>this.setState({active})} style={{marginBottom: 10, marginTop: 10}}>
-        <img alt={name} src={image} style={{borderRadius: 22, width: 44}}/>
-        <div>
+      <li key={name} onClick={setActive.bind(null, id)}
+        style={{alignItems: 'center', display: 'flex', marginBottom: 10, marginTop: 10, paddingRight: 32}}>
+        <img alt={name} src={image} style={{borderRadius: 22, marginRight: 16, width: 44}}/>
+        <div style={{flex: 1}}>
           <h3 style={{color: '#FFFFFF', fontFace: 'Avenir-Heavy', fontSize: 18}}>{name}</h3>
-          <span style={{color: '#81D232 100%', fontFace: 'Avenir-Medium', fontSize: 13}}>{species} {gender}, {origin.name}</span>
+          <span style={{color: '#81D232', fontFace: 'Avenir-Medium', fontSize: 13}}>{species} {gender}, {origin.name}</span>
         </div>
-        <div style={{border: '1px inside * #81D232 100%', color: 'rgba(255, 255, 255, 0.4)', radius: 4}}>
-          <span>{status}</span>
-        </div>
-      </div>
+        <span style={{borderStyle: 'solid', borderWidth: 1, borderRadius: 4, color: status === 'Alive' ? '#81D232' : 'rgba(255, 255, 255, 0.4)', character: 1.8, fontFace: 'Avenir-Medium', fontSize: 10}}>{status.toUpperCase()}</span>
+      </li>
     )
   }
 
@@ -42,15 +36,12 @@ export default class List extends Component
     const {characters} = this.state
 
     return (
-      <div className="list" style={{borderBottomLeftRadius: 32, borderTopLeftRadius: 32}}>
-        <div style={{margin: 32}}>
-          <h2 style={{color: '#FFFFFF 100%', fontFace: 'Avenir-Black', fontSize: 28}}>Characters</h2>
-          <div style={{marginTop: 16, overflow: 'auto'}}>
-            {characters.map(this._renderCharacter.bind(this))}
-          </div>
-        </div>
-        <Details character={characters.find(this.findActiveCharacter)}/>
-      </div>
+      <nav className="list">
+        <h2 style={{color: '#FFFFFF 100%', fontFace: 'Avenir-Black', fontSize: 28, marginBottom: 16}}>Characters</h2>
+        <ul style={{overflowY: 'auto', height: '100%'}}>
+          {characters.map(this._renderCharacter.bind(this))}
+        </ul>
+      </nav>
     )
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import Detail from './Detail'
 import LeftBanner from './LeftBanner'
 import Loader from './Loader'
 import List from './List'
@@ -13,10 +14,7 @@ export default class App extends Component
     {
         super(props);
 
-        this.state =
-        {
-            loading: true
-        }
+        this.state = {}
 
         fetch('https://rickandmortyapi.com/api/character/')
         .then(function(result)
@@ -24,19 +22,33 @@ export default class App extends Component
             return result.json()
         }, console.error)
         .then(({results: characters}) => {
-            this.setState({characters, loading: false})
+            this.setState({active: characters[0].id, characters})
         })
+
+        this.findActiveCharacter = ({id}) => id === this.state.active
+        this.setActive = active => this.setState({active})
     }
+
+    _renderMain()
+    {
+        const {characters} = this.state
+
+        if(!characters) return <Loader isLoading={true}/>
+
+        return (
+            <>
+                <List setActive={this.setActive} characters={characters}/>
+                <Detail character={characters.find(this.findActiveCharacter)}/>
+            </>
+        )
+}
 
     render()
     {
-        const {characters, loading} = this.state
-
         return (
-            <div className="App">
+            <div className="App" style={{display: 'flex'}}>
                 <LeftBanner/>
-                <Loader isLoading={loading}/>
-                {characters && <List characters={characters}/>}
+                {this._renderMain()}
             </div>
         );
     }

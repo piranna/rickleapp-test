@@ -4,6 +4,7 @@ import React from 'react'
 const style =
 {
   color: '#FFFFFF 100%',
+  float: 'right',
   fontFace: 'Avenir-Black',
   fontSize: 100,
   opacity: '8%',
