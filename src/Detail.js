@@ -11,7 +11,7 @@ function renderEpisode(episode)
   key = key[key.length-1]
 
   return (
-    <a href={episode} key={key} style={{background: '#FFFFFF 20%', borderRadius: 8, height: 40, width: 40, marginTop: 12, marginRight: 16}}>
+    <a href={episode} key={key} style={{background: '#FFFFFF 20%', borderRadius: 8, height: 40, width: 40}}>
       <span style={{color: '#FFFFFF 100%', fontFace: 'Avenir-Medium', fontSize: 18}}>{key}</span>
     </a>
   )
@@ -32,8 +32,15 @@ export default function({character})
           <span style={{color: '#81D232', fontFace: 'Avenir-Medium', fontSize: 15}}>{species} {gender}, {origin.name}</span>
         </section>
         <section style={{height: '100%', marginTop: 32}}>
-          <h3 style={{marginBottom: 4}}>Episodes</h3>
-          <nav style={{alignContent: 'flex-start', display: 'flex', flexWrap: 'wrap', height: '100%', justifyContent: 'space-between', overflowY: 'auto', width: 280}}>
+          <h3 style={{marginBottom: 16}}>Episodes</h3>
+          <nav style={{
+            columnGap: 16,
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, 40px)',
+            justifyContent: 'space-between',
+            overflowY: 'auto',
+            rowGap: 12
+          }}>
             {episode.map(renderEpisode)}
           </nav>
         </section>
