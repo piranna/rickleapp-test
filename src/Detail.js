@@ -11,8 +11,19 @@ function renderEpisode(episode)
   key = key[key.length-1]
 
   return (
-    <a href={episode} key={key} style={{background: '#FFFFFF 20%', borderRadius: 8, height: 40, width: 40}}>
-      <span style={{color: '#FFFFFF 100%', fontFace: 'Avenir-Medium', fontSize: 18}}>{key}</span>
+    <a href={episode} key={key} style={{
+      alignItems: 'center',
+      background: 'rgba(255, 255, 255, 0.2)',
+      borderRadius: 8,
+      color: '#FFFFFF',
+      display: 'flex',
+      fontFace: 'Avenir-Medium',
+      fontSize: 18,
+      height: 40,
+      justifyContent: 'center',
+      textDecoration: 'none'
+    }}>
+      {key}
     </a>
   )
 }
