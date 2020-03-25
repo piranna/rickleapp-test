@@ -36,7 +36,12 @@ export default function({character})
   return(
     <div className='detail'>
       <RightBanner name={name}/>
-      <article style={{display: 'flex', flexDirection: 'column'}}>
+      <article style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        overflowY: 'auto'
+      }}>
         <img alt={name} src={image} style={{borderRadius: 16, height: 184, width: 240}}/>
         <section style={{marginTop: 20}}>
           <h2 style={{color: '#FFFFFF 100%', fontFace: 'Avenir-Black', fontSize: 28, marginBottom: 4}}>{name}</h2>
