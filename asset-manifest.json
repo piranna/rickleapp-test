@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.72a20339.chunk.css",
-    "main.js": "/static/js/main.41175dfc.chunk.js",
-    "main.js.map": "/static/js/main.41175dfc.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4ef43e80.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4ef43e80.js.map",
-    "static/js/2.9a32696f.chunk.js": "/static/js/2.9a32696f.chunk.js",
-    "static/js/2.9a32696f.chunk.js.map": "/static/js/2.9a32696f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.0f042d66811d290e08a72594064cfa64.js": "/precache-manifest.0f042d66811d290e08a72594064cfa64.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.72a20339.chunk.css.map": "/static/css/main.72a20339.chunk.css.map",
-    "static/js/2.9a32696f.chunk.js.LICENSE.txt": "/static/js/2.9a32696f.chunk.js.LICENSE.txt",
-    "static/media/app.scss": "/static/media/AvenirLTStd-Roman.b1d7c6e0.otf",
-    "static/media/morty.png": "/static/media/morty.b2170ed5.png",
-    "static/media/rick.png": "/static/media/rick.ce1a0d8e.png"
+    "main.css": "/rickleapp-test/static/css/main.356a3281.chunk.css",
+    "main.js": "/rickleapp-test/static/js/main.94a86d47.chunk.js",
+    "main.js.map": "/rickleapp-test/static/js/main.94a86d47.chunk.js.map",
+    "runtime-main.js": "/rickleapp-test/static/js/runtime-main.07756217.js",
+    "runtime-main.js.map": "/rickleapp-test/static/js/runtime-main.07756217.js.map",
+    "static/js/2.9a32696f.chunk.js": "/rickleapp-test/static/js/2.9a32696f.chunk.js",
+    "static/js/2.9a32696f.chunk.js.map": "/rickleapp-test/static/js/2.9a32696f.chunk.js.map",
+    "index.html": "/rickleapp-test/index.html",
+    "precache-manifest.1565f4607290d1e25c56116371e5240b.js": "/rickleapp-test/precache-manifest.1565f4607290d1e25c56116371e5240b.js",
+    "service-worker.js": "/rickleapp-test/service-worker.js",
+    "static/css/main.356a3281.chunk.css.map": "/rickleapp-test/static/css/main.356a3281.chunk.css.map",
+    "static/js/2.9a32696f.chunk.js.LICENSE.txt": "/rickleapp-test/static/js/2.9a32696f.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/rickleapp-test/static/media/AvenirLTStd-Roman.b1d7c6e0.otf",
+    "static/media/morty.png": "/rickleapp-test/static/media/morty.b2170ed5.png",
+    "static/media/rick.png": "/rickleapp-test/static/media/rick.ce1a0d8e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4ef43e80.js",
+    "static/js/runtime-main.07756217.js",
     "static/js/2.9a32696f.chunk.js",
-    "static/css/main.72a20339.chunk.css",
-    "static/js/main.41175dfc.chunk.js"
+    "static/css/main.356a3281.chunk.css",
+    "static/js/main.94a86d47.chunk.js"
   ]
 }
