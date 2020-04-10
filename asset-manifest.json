@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/rickleapp-test/static/css/main.aa0fdc2b.chunk.css",
-    "main.js": "/rickleapp-test/static/js/main.9e49f492.chunk.js",
-    "main.js.map": "/rickleapp-test/static/js/main.9e49f492.chunk.js.map",
+    "main.css": "/rickleapp-test/static/css/main.ffdfa101.chunk.css",
+    "main.js": "/rickleapp-test/static/js/main.79d5ef66.chunk.js",
+    "main.js.map": "/rickleapp-test/static/js/main.79d5ef66.chunk.js.map",
     "runtime-main.js": "/rickleapp-test/static/js/runtime-main.4df445e6.js",
     "runtime-main.js.map": "/rickleapp-test/static/js/runtime-main.4df445e6.js.map",
     "static/js/2.a2ab373d.chunk.js": "/rickleapp-test/static/js/2.a2ab373d.chunk.js",
     "static/js/2.a2ab373d.chunk.js.map": "/rickleapp-test/static/js/2.a2ab373d.chunk.js.map",
     "index.html": "/rickleapp-test/index.html",
-    "precache-manifest.e9cbd7b4b3acf0faee914e1da0b83d4d.js": "/rickleapp-test/precache-manifest.e9cbd7b4b3acf0faee914e1da0b83d4d.js",
+    "precache-manifest.8d4fe9a0a7fe3f7980f38f9204e9faca.js": "/rickleapp-test/precache-manifest.8d4fe9a0a7fe3f7980f38f9204e9faca.js",
     "service-worker.js": "/rickleapp-test/service-worker.js",
-    "static/css/main.aa0fdc2b.chunk.css.map": "/rickleapp-test/static/css/main.aa0fdc2b.chunk.css.map",
+    "static/css/main.ffdfa101.chunk.css.map": "/rickleapp-test/static/css/main.ffdfa101.chunk.css.map",
     "static/js/2.a2ab373d.chunk.js.LICENSE.txt": "/rickleapp-test/static/js/2.a2ab373d.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/rickleapp-test/static/media/AvenirLTStd-Roman.b1d7c6e0.otf",
     "static/media/morty.png": "/rickleapp-test/static/media/morty.b2170ed5.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.4df445e6.js",
     "static/js/2.a2ab373d.chunk.js",
-    "static/css/main.aa0fdc2b.chunk.css",
-    "static/js/main.9e49f492.chunk.js"
+    "static/css/main.ffdfa101.chunk.css",
+    "static/js/main.79d5ef66.chunk.js"
   ]
 }

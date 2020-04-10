@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rickleapp-test/precache-manifest.e9cbd7b4b3acf0faee914e1da0b83d4d.js"
+  "/rickleapp-test/precache-manifest.8d4fe9a0a7fe3f7980f38f9204e9faca.js"
 );
 
 self.addEventListener('message', (event) => {
