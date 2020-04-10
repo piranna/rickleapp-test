@@ -35,8 +35,15 @@ export default function({character})
 
   return(
     <div className='detailBackground'>
-      <div className='detail'>
-        <div style={{height: '100%', overflowY: 'auto'}}>
+      <div className='detail' style={{
+        // width: '0%'
+      }}>
+        <div style={{
+          height: '100%',
+          overflowY: 'auto',
+          paddingRight: 24,
+          // visibility: 'hidden'
+        }}>
           <RightBanner name={name}/>
           <article style={{
             display: 'flex',
