@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classnames from 'classnames'
 
 import './css/list.scss'
 
@@ -26,7 +27,7 @@ export default class List extends Component
           <h3 style={{color: '#FFFFFF', fontFace: 'Avenir-Heavy', fontSize: 18}}>{name}</h3>
           <span style={{color: '#81D232', fontFace: 'Avenir-Medium', fontSize: 13}}>{species} {gender}, {origin.name}</span>
         </div>
-        <span style={{borderStyle: 'solid', borderWidth: 1, borderRadius: 4, color: status === 'Alive' ? '#81D232' : 'rgba(255, 255, 255, 0.4)', character: 1.8, fontFace: 'Avenir-Medium', fontSize: 10}}>{status.toUpperCase()}</span>
+        <span className={classnames(['status', status])}>{status.toUpperCase()}</span>
       </li>
     )
   }
