@@ -34,33 +34,34 @@ export default function({character})
   const {episode, gender, image, name, origin, species} = character
 
   return(
-    <div className='detail'>
-      <RightBanner name={name}/>
-      <article style={{
-        display: 'flex',
-        flexDirection: 'column',
-        height: '100%',
-        overflowY: 'auto'
-      }}>
-        <img alt={name} src={image} style={{borderRadius: 16, height: 184, width: 240}}/>
-        <section style={{marginTop: 20}}>
-          <h2 style={{color: '#FFFFFF 100%', fontFace: 'Avenir-Black', fontSize: 28, marginBottom: 4}}>{name}</h2>
-          <span style={{color: '#81D232', fontFace: 'Avenir-Medium', fontSize: 15}}>{species} {gender}, {origin.name}</span>
-        </section>
-        <section style={{height: '100%', marginTop: 32}}>
-          <h3 style={{marginBottom: 16}}>Episodes</h3>
-          <nav style={{
-            columnGap: 16,
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, 40px)',
-            justifyContent: 'space-between',
-            overflowY: 'auto',
-            rowGap: 12
+    <div className='detailBackground'>
+      <div className='detail'>
+        <div style={{height: '100%', overflowY: 'auto'}}>
+          <RightBanner name={name}/>
+          <article style={{
+            display: 'flex',
+            flexDirection: 'column'
           }}>
-            {episode.map(renderEpisode)}
-          </nav>
-        </section>
-      </article>
+            <img alt={name} src={image} style={{borderRadius: 16, height: 184, width: 240}}/>
+            <section style={{marginTop: 20}}>
+              <h2 style={{color: '#FFFFFF 100%', fontFace: 'Avenir-Black', fontSize: 28, marginBottom: 4}}>{name}</h2>
+              <span style={{color: '#81D232', fontFace: 'Avenir-Medium', fontSize: 15}}>{species} {gender}, {origin.name}</span>
+            </section>
+            <section style={{height: '100%', marginTop: 32}}>
+              <h3 style={{marginBottom: 16}}>Episodes</h3>
+              <nav style={{
+                columnGap: 16,
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, 40px)',
+                justifyContent: 'space-between',
+                rowGap: 12
+              }}>
+                {episode.map(renderEpisode)}
+              </nav>
+            </section>
+          </article>
+        </div>
+      </div>
     </div>
   )
 }
